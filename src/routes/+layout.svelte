@@ -6,7 +6,7 @@
 <main class="w-full min-h-screen bg-white">
 	<header class="lg:pl-[320px] z-9 w-full pl-0 border-b border-zinc-200 py-4 bg-white sticky">
 		<nav
-			class="w-full flex flex-row items-center h-[48px] justify-start space-x-0 px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16"
+			class="w-full flex flex-row items-center h-[48px] justify-start space-x-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16"
 		>
 			<button
 				type="button"
