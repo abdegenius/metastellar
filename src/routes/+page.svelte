@@ -151,7 +151,7 @@
 		</div>
 		<button
 			type="button"
-			on:click|preventDefault={btn_callMetaStellar('connect', { testnet })}
+			on:click|preventDefault={() => (btn_callMetaStellar('connect', { testnet }))}
 			class="btn"
 		>
 			Run💡
@@ -266,7 +266,7 @@
 					<LineNumbers {highlighted} wrapLines --padding-left="1em" --padding-right="1em" />
 				</Highlight>
 			</div>
-			<button type="button" class="btn" on:click|preventDefault={btn_connectSnap}>
+			<button type="button" class="btn" on:click|preventDefault={() => (btn_connectSnap)}>
 				Exec Connect()
 			</button>
 		</div>
@@ -286,7 +286,7 @@
 					<LineNumbers {highlighted} wrapLines --padding-left="1em" --padding-right="1em" />
 				</Highlight>
 			</div>
-			<button type="button" class="btn" on:click|preventDefault={btn_getDataPacket}>
+			<button type="button" class="btn" on:click|preventDefault={() => (btn_getDataPacket)}>
 				Retreve Standard Wallet INFO!
 			</button>
 			<a href="#getDataPacket-method" class="link">getDataPacket method</a>
@@ -370,7 +370,7 @@
 						<LineNumbers {highlighted} wrapLines --padding-left="1em" --padding-right="1em" />
 					</Highlight>
 				</div>
-				<button type="button" class="btn" on:click|preventDefault={btn_getAccountInfo}
+				<button type="button" class="btn" on:click|preventDefault={() => (btn_getAccountInfo)}
 					>Get Account Info</button
 				>
 			</div>
@@ -384,7 +384,7 @@
 						<LineNumbers {highlighted} wrapLines --padding-left="1em" --padding-right="1em" />
 					</Highlight>
 				</div>
-				<button type="button" class="btn" on:click|preventDefault={btn_getBalance}
+				<button type="button" class="btn" on:click|preventDefault={() => (btn_getBalance)}
 					>Get Balance</button
 				>
 			</div>
@@ -449,7 +449,7 @@
 						<LineNumbers {highlighted} wrapLines --padding-left="1em" --padding-right="1em" />
 					</Highlight>
 				</div>
-				<button type="button" class="btn" on:click|preventDefault={btn_getDataPacket}
+				<button type="button" class="btn" on:click|preventDefault={() => (btn_getDataPacket)}
 					>Get Data Packet</button
 				>
 			</div>
@@ -491,7 +491,7 @@
 						<LineNumbers {highlighted} wrapLines --padding-left="1em" --padding-right="1em" />
 					</Highlight>
 				</div>
-				<button type="button" class="btn" on:click|preventDefault={btn_createAccount}
+				<button type="button" class="btn" on:click|preventDefault={() => (btn_createAccount)}
 					>Create Account</button
 				>
 			</div>
