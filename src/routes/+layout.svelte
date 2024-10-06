@@ -3,10 +3,10 @@
 	$: show_menu = false;
 </script>
 
-<main class="w-full min-h-screen bg-white">
-	<header class="lg:pl-[320px] z-9 w-full pl-0 border-b border-zinc-200 py-4 bg-white sticky">
+<main class="w-full min-h-screen bg-white relative">
+	<header class="lg:pl-[320px] z-[9998] w-full pl-0 border-b border-zinc-200 py-4 bg-white fixed h-[60px]">
 		<nav
-			class="w-full flex flex-row items-center h-[48px] justify-start space-x-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16"
+			class="w-full flex flex-row items-center h-full relative justify-start space-x-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16"
 		>
 			<button
 				type="button"
@@ -19,7 +19,7 @@
 		</nav>
 	</header>
 	<div
-		class="bg-white top-0 left-0 fixed z-10 max-w-[320px] {show_menu
+		class="bg-white top-0 left-0 fixed z-[9999] max-w-[320px] {show_menu
 			? 'flex'
 			: 'hidden'} lg:flex flex-col items-start px-4 py-8 border-r border-zinc-200 min-h-screen w-full h-full"
 	>
@@ -254,7 +254,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="lg:pl-[320px] w-full pl-0 bg-white">
+	<div class="lg:pl-[320px] w-full pl-0 bg-white z-0 py-[72px]">
 		<slot />
 	</div>
 </main>
